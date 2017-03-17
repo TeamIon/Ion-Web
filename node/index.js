@@ -14,7 +14,7 @@ io.on('connection', function(socket){
     console.log('message: ' + msg);
   });
   socket.on('disconnect', function(){
-    console.log(adress + ' disconnected');
+    console.log(address + ' disconnected');
   });
 });
 
