@@ -7,8 +7,8 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-  var adress = socket.handshake.adress;
-  console.log(adress + ' connected');
+  var address = socket.handshake.address;
+  console.log(address + ' connected');
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
     console.log('message: ' + msg);
